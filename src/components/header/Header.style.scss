@@ -1,0 +1,12 @@
+@import "../../scss//theme";
+
+.header {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: $primary-color;
+
+  display: flex;
+  justify-content: space-between;
+}

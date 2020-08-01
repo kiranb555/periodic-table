@@ -1,0 +1,9 @@
+@import "./scss/theme";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: $bg-color;
+}

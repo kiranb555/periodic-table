@@ -1,0 +1,29 @@
+@import "../../../scss//theme";
+
+.home {
+  &_periodic_table {
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    grid-template-rows: repeat(10, 80px);
+    grid-gap: 2px;
+    padding: 30px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // overflow: auto;
+    // transform: translate(-50%, -50%);
+
+    @media (min-width: 320px) and(max-width: 600px) {
+      grid-template-columns: repeat(18, 20px);
+      grid-template-rows: repeat(10, 50px);
+    }
+    @media (min-width: 601px) and(max-width: 768px) {
+      grid-template-columns: repeat(18, 40px);
+      grid-template-rows: repeat(10, 50px);
+    }
+    @media (min-width: 769px) and(max-width: 1440px) {
+      grid-template-columns: repeat(18, 50px);
+      grid-template-rows: repeat(10, 50px);
+    }
+  }
+}
