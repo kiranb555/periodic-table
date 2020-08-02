@@ -1,0 +1,23 @@
+@import "../../scss/theme";
+
+.footer {
+  height: 20vh;
+  color: $text-light;
+  background-color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &_social {
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

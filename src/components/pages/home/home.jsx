@@ -1,8 +1,7 @@
 import React from "react";
-import "./home.style.scss";
-import Cell from "../../cell";
-
 import { connect } from "react-redux";
+import Cell from "../../cell";
+import "./home.style.scss";
 
 const Home = ({ periodicTableData }) => {
   return (

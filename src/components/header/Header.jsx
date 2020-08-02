@@ -7,9 +7,9 @@ import "./Header.style.scss";
 function Header() {
   return (
     <header className="header">
-      <div>
+      <h4>
         <Link to="/">Periodic Table</Link>
-      </div>
+      </h4>
       <Link to="/">
         <FontAwesomeIcon icon={faHome} />
       </Link>

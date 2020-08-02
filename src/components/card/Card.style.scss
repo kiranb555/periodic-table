@@ -1,9 +1,50 @@
 .card {
+  position: relative;
   width: 600px;
-  height: 60vh;
-  border: 1px solid #000000;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px 2px #aaaaaa;
 
   &_header {
-    height: 30%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+
+    &_content1 {
+      .back {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+      .num {
+        font-size: 18px;
+      }
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    &_content2 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &_body {
+    padding: 20px;
+
+    &_table {
+      display: flex;
+      justify-content: center;
+      table,
+      tr,
+      td {
+        border-bottom: 1px solid #cccccc;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 5px 2px;
+      }
+    }
   }
 }

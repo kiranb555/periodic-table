@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header";
-import Home from "./components/pages/home";
-import Details from "./components/pages/details";
+import Footer from "./components/footer";
+import Spinner from "./components/spinner";
 import "./App.scss";
+
+const Home = lazy(() => import("./components/pages/home"));
+const Details = lazy(() => import("./components/pages/details"));
 
 function App() {
   return (
@@ -11,15 +14,14 @@ function App() {
       <div className="App">
         <Header />
         <div>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/details:ID">
-              <Details />
-            </Route>
-          </Switch>
+          <Suspense fallback={<Spinner />}>
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/details:ID" component={Details} />
+            </Switch>
+          </Suspense>
         </div>
+        <Footer />
       </div>
     </Router>
   );
