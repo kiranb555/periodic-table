@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a representation of Mendeleev's periodic table, using css grid layout, React js, redux to build this app 
+deployed in to Heroku. 
+You can visit https://periodictableelements.herokuapp.com/
 
 ## Available Scripts
 
