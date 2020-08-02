@@ -13,7 +13,7 @@ function Cell({ name, number, symbol, xpos, ypos, category }) {
       <Link to={`/details:${number}`}>
         <div>{number}</div>
         <div className="symbol">{symbol}</div>
-        <small>{name}</small>
+        <small className="name">{name}</small>
       </Link>
     </div>
   );
