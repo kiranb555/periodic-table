@@ -8,7 +8,7 @@ import "./spinner.style.scss";
 function Spinner() {
   return (
     <div className="spinner">
-      <FontAwesomeIcon icon={faSpinner} />
+      <FontAwesomeIcon icon={faSpinner} spin />
     </div>
   );
 }
