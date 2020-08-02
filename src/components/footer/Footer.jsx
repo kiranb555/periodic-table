@@ -4,7 +4,7 @@ import "./Footer.style.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <div>©2020</div>
+      <div>© 2020</div>
       <div>Developed by Kiran B, Bangalore,India</div>
       <div className="footer_social">
         <div>
